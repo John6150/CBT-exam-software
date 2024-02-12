@@ -28,24 +28,25 @@
         </div>
         <div class="question">
             <p id="quest"></p>
+            <h2 id="number"></h2>
         </div>
         <div class="options">
             <div class="opt-a">
-                <input name="opta" type="radio">
-                <label id="opta" for="opta">Barak Obama</label>
+                <input onclick="check(0)" name="options" id="opta" type="radio">
+                <label class="opta option" id="opta" for="opta"></label>
+                <!-- <label id="test"></label> -->
             </div>
             <div class="opt-b">
-                <label id="optb" for="opta">Donald Trump</label>
-
-                <input name="opta" type="radio">
+                <input onclick="check(1)" name="options" id="optb" type="radio">
+                <label class="optb option" id="optb" for="optb"></label>
             </div>
             <div class="opt-c">
-                <input name="opta" type="radio">
-                <label id="optc" for="opta">John Oluwafemi</label>
+                <input onclick="check(2)" name="options" id="optc" type="radio">
+                <label class="optc option" id="optc" for="optc"></label>
             </div>
             <div class="opt-d">
-                <label id="optd" for="opta">Mohamadu Buhari</label>
-                <input name="opta" type="radio">
+                <input onclick="check(3)" name="options" id="optd" type="radio">
+                <label class="optd option" id="optd" for="optd"></label>
             </div>
         </div>
         <div class="btn">
@@ -54,6 +55,18 @@
             <button onclick="next()"><img src="arrow1.png" alt=""></button>
         </div>
     </div>
+    <div class="result-page">
+        <h1><img src="result.png" alt="">Your Result</h1>
+        <div class="result-main">
+            <h5>Total Questions Answered: <p class="result-details"></p></h5>
+            <h5>Questions Answered Correctly: <p class="result-details"></p></h5>
+            <h5>Questions Answered Incorrectly: <p class="result-details">0</p></h5>
+            <h5>Percentage Score<p class="result-details">0</p></h5>
+            <h2 class="result-details"></h2>
+            <button class="result-details" onclick="ref()">Restart</button>
+        </div>
+    </div>
+
 
 </body>
 
